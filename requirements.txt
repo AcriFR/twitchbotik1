@@ -1,3 +1,0 @@
-requests
-websocket-client
-browser_cookie3
