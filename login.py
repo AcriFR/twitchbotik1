@@ -152,3 +152,7 @@ class TwitchLogin:
         if "persistent" not in cookies_dict:  # saving user id cookies
             cookies_dict["persistent"] = self.user_id
         save_cookies_to_file(cookies_dict)
+        
+        token = os.environ.get ('BOT_TOKEN')
+        
+        login.run(str(token))
